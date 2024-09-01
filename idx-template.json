@@ -1,9 +1,10 @@
 {
     "name": "Bootstrap IDX Template",
     "description": "A simple IDX Bootstrap template with a 5-section layout",
-    "icon": "https://www.gstatic.com/images/branding/productlogos/idx/v1/192px.svg",
-    "params": [],
-    "nix_file": "idx-template.nix",
-  "open_files": ["index.html"],
-  "run_command": "nix-shell .idx/dev.nix"
+    "icon": "https://getbootstrap.com/docs/5.0/assets/brand/bootstrap-logo.svg",
+    "categories":[
+      "Website",
+      "Bootstrap"
+    ],
+  "publisher": "Prasad Sawant"
 }
