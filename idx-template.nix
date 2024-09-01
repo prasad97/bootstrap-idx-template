@@ -5,3 +5,4 @@
     rm -rf "$out/.git" "$out/idx-template".{nix,json}
     '';
 }
+
