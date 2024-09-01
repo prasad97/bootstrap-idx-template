@@ -5,5 +5,5 @@
     "params": [],
     "nix_file": "idx-template.nix",
   "open_files": ["index.html"],
-  "run_command": "nix-shell idx/dev.nix"
+  "run_command": "nix-shell .idx/dev.nix"
 }

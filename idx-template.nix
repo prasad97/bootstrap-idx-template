@@ -1,8 +1,11 @@
-{ pkgs, ... }: {
-    bootstrap = ''
-    cp -rf ${./.} "$out"
-    chmod -R +w "$out"
-    rm -rf "$out/.git" "$out/idx-template".{nix,json}
-    '';
-}
+{ pkgs ? import <nixpkgs> {} }:
 
+pkgs.stdenv.mkDerivation {
+  name = "html-css-idx-template";
+  src = ./.;
+  buildInputs = [ pkgs.coreutils ];
+  installPhase = ''
+    mkdir -p $out
+    cp -r index.html styles.css idx-template.json .idx/dev.nix $out/
+  '';
+}
